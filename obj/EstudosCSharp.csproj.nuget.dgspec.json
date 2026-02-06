@@ -14,11 +14,15 @@
         "outputPath": "C:\\github\\EstudosCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kayke.silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kayke.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
