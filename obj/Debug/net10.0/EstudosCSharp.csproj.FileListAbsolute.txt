@@ -1,0 +1,15 @@
+C:\github\EstudosCSharp\bin\Debug\net10.0\EstudosCSharp.exe
+C:\github\EstudosCSharp\bin\Debug\net10.0\EstudosCSharp.deps.json
+C:\github\EstudosCSharp\bin\Debug\net10.0\EstudosCSharp.runtimeconfig.json
+C:\github\EstudosCSharp\bin\Debug\net10.0\EstudosCSharp.dll
+C:\github\EstudosCSharp\bin\Debug\net10.0\EstudosCSharp.pdb
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.AssemblyInfoInputs.cache
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.AssemblyInfo.cs
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.csproj.CoreCompileInputs.cache
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.sourcelink.json
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.dll
+C:\github\EstudosCSharp\obj\Debug\net10.0\refint\EstudosCSharp.dll
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.pdb
+C:\github\EstudosCSharp\obj\Debug\net10.0\EstudosCSharp.genruntimeconfig.cache
+C:\github\EstudosCSharp\obj\Debug\net10.0\ref\EstudosCSharp.dll
