@@ -1,104 +1,111 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 
-namespace HelloWorld
+namespace Calculator
 {
-    class Programa
+    class Program
     {
+
         static void Main(string[] args)
         {
-            string FinalResult = "The Result of the sum is : "; 
-            string typeOp = string.Empty;
+            string typeOperation = string.Empty;
 
             Console.WriteLine("-------------- Welcome to my Calculator --------------- ");
-            Console.WriteLine("1.sum");
-            Console.WriteLine("2.Substraction");
-            Console.WriteLine("3.Adiction");
+            Console.WriteLine("1.Addition");
+            Console.WriteLine("2.Subtraction");
+            Console.WriteLine("3.division");
             Console.WriteLine("4.Multiplication");
             Console.WriteLine("-------------- Type the operation --------------------");
-            typeOp = Console.ReadLine();
+            typeOperation = Console.ReadLine();
 
-            if (typeOp == "1")
+            if (typeOperation == "1")
             {
-                Console.WriteLine(FinalResult += Programa.sum("1"));
+                Console.WriteLine("The final result:" + Program.Addition().ToString());
             }
-            else if (typeOp == "2")
+            else if (typeOperation == "2")
             {
-                Console.WriteLine(FinalResult += Programa.sub("2"));
+                Console.WriteLine("The final result:" +  Program.Subtraction().ToString());
             }
-            else if (typeOp == "3")
+            else if (typeOperation == "3")
             {
-                Console.WriteLine(FinalResult = Programa.ad("3"));
+                Program.Division();
             }
-            else if (typeOp == "4")
+            else if (typeOperation == "4")
             {
-                Console.WriteLine(FinalResult = Programa.mult("4"));
+                Console.WriteLine("The final result:" +  Program.Multiplication().ToString());
+            }else
+            {
+                Console.WriteLine("The operation not is valid");
             }
-
+          
         }
-
-        static string sum(string strings)
+        static int Addition()
         {
-            int num1;
-            int num2;
-            string finalResult;
 
-            Console.WriteLine("--------------Sum---------------");
-            Console.WriteLine("Type the first number to sum");
-            num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Type the second number to sum");
-            num2 = int.Parse(Console.ReadLine());
+            int FirstNumber = 0;
+            int SecondNumber = 0;
+            int Result = 0;
 
-            finalResult = ((num1 + num2).ToString());
+            Console.WriteLine("--------------Addition---------------");
+            Console.WriteLine("Type the first number to Addition");
+            FirstNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the second number to Addition");
+            SecondNumber = int.Parse(Console.ReadLine());
 
-            return finalResult;
+            Result = (FirstNumber + SecondNumber);
+
+            return Result;
 
         }
 
-        static string sub(string strings) {
-            int num1;
-            int num2;
-            string finalResult;
+        static int Subtraction() {
 
-            Console.WriteLine("---------Substraction-------");
+            int FirstNumber = 0;
+            int SecondNumber = 0;
+            int Result = 0;
+
+            Console.WriteLine("---------Subtraction-------");
             Console.WriteLine("Type the first number to sub");
-            num1 = int.Parse(Console.ReadLine());
+            FirstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("Type the second number to sub");
-            num2 = int.Parse(Console.ReadLine());
-            finalResult = ((num1 - num2).ToString());
+            SecondNumber = int.Parse(Console.ReadLine());
+            Result = (FirstNumber - SecondNumber);
 
-            return finalResult;
+            return Result;
         }
-        static string ad(string strings)
+        static void Division()
         {
-            int num1;
-            int num2;
-            string finalResult;
+            double Result;
 
-            Console.WriteLine("---------Adiction-------");
-            Console.WriteLine("Type the first number to the ad");
-            num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Type the second number to the ad");
-            num2 = int.Parse(Console.ReadLine());
-            finalResult = ((num1 / num2).ToString());
-
-            return finalResult;
+            Console.WriteLine("---------Division-------");
+            Console.WriteLine("Type the first number to the division");
+            if (!double.TryParse(Console.ReadLine(), out double FirstNumber)) return ;
+            Console.WriteLine("Type the second number to the division");
+            if (!double.TryParse(Console.ReadLine(), out double  SecondNumber)) return ;
+            
+            if (SecondNumber == 0)
+            {
+                Console.WriteLine("Numer can't calculate by zero");
+            }else
+            {
+                Console.WriteLine($"The final result:{FirstNumber / SecondNumber}");
+            }
+   
         }
-        static string mult(string strings)
+        static int Multiplication()
         {
-            int num1;
-            int num2;
-            string finalResult;
+
+            int FirstNumber = 0;
+            int SecondNumber = 0;
+            int Result = 0;
 
             Console.WriteLine("---------Multiplication-------");
             Console.WriteLine("Type the first number to Mult");
-            num1 = int.Parse(Console.ReadLine());
+            FirstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("Type the second number to Mult");
-            num2 = int.Parse(Console.ReadLine());
-            finalResult = ((num1 * num2).ToString());
+            SecondNumber = int.Parse(Console.ReadLine());
+            Result = (FirstNumber * SecondNumber);
 
-            return finalResult;
+            return Result;
         }
     }
 
