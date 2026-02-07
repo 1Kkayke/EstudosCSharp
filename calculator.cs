@@ -18,7 +18,7 @@ namespace HelloWorld
             Console.WriteLine("4.Multiplication");
             Console.WriteLine("-------------- Type the operation --------------------");
             typeOp = Console.ReadLine();
-            
+
             if (typeOp == "1")
             {
                 Console.WriteLine(FinalResult += Programa.sum("1"));
@@ -26,6 +26,14 @@ namespace HelloWorld
             else if (typeOp == "2")
             {
                 Console.WriteLine(FinalResult += Programa.sub("2"));
+            }
+            else if (typeOp == "3")
+            {
+                Console.WriteLine(FinalResult = Programa.ad("3"));
+            }
+            else if (typeOp == "4")
+            {
+                Console.WriteLine(FinalResult = Programa.mult("4"));
             }
 
         }
@@ -58,10 +66,40 @@ namespace HelloWorld
             num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Type the second number to sub");
             num2 = int.Parse(Console.ReadLine());
-            finalResult = ((num1 + num2).ToString());
+            finalResult = ((num1 - num2).ToString());
 
             return finalResult;
-        } 
+        }
+        static string ad(string strings)
+        {
+            int num1;
+            int num2;
+            string finalResult;
+
+            Console.WriteLine("---------Adiction-------");
+            Console.WriteLine("Type the first number to the ad");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the second number to the ad");
+            num2 = int.Parse(Console.ReadLine());
+            finalResult = ((num1 / num2).ToString());
+
+            return finalResult;
+        }
+        static string mult(string strings)
+        {
+            int num1;
+            int num2;
+            string finalResult;
+
+            Console.WriteLine("---------Multiplication-------");
+            Console.WriteLine("Type the first number to Mult");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the second number to Mult");
+            num2 = int.Parse(Console.ReadLine());
+            finalResult = ((num1 * num2).ToString());
+
+            return finalResult;
+        }
     }
 
 }
