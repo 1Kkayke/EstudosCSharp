@@ -8,16 +8,16 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
-            string resposta = "Resultado:";
+            string FinalResult = "Result:";
             string num1 = string.Empty;
             string num2 = string.Empty;
             string typeOp = string.Empty;
             
-            Console.WriteLine("--------------Bem vindo a calculadora --------------- ");
-            Console.WriteLine("1.Soma");
-            Console.WriteLine("2.Subtração");
-            Console.WriteLine("3.Adição");
-            Console.WriteLine("4.Multiplicação");
+            Console.WriteLine("-------------- Welcome to my Calculator --------------- ");
+            Console.WriteLine("1.sum");
+            Console.WriteLine("2.Substraction");
+            Console.WriteLine("3.Adiction");
+            Console.WriteLine("4.Multiplication");
             Console.WriteLine("--------------Digite sua operação--------------------");
             typeOp = Console.ReadLine();
             
@@ -29,7 +29,7 @@ namespace HelloWorld
                 Console.WriteLine("Digite o segundo digito para somar");
                 num2 = Console.ReadLine();
 
-                for (int x = 0; x < numbers.Length; x++) //percorre array numbers 
+                for (int x = 0; x < numbers.Length; x++) //percurr array of numbers
                 {
                     if (x == numbers[x])
                     {
@@ -37,7 +37,6 @@ namespace HelloWorld
                     }
                 }
 
-                //Console.WriteLine(resposta +);
             }
         
         }
