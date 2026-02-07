@@ -25,10 +25,9 @@ namespace HelloWorld
             }
             else if (typeOp == "2")
             {
-                Console.WriteLine(FinalResult += Programa.sub("2");
+                Console.WriteLine(FinalResult += Programa.sub("2"));
             }
-            
-        
+
         }
 
         static string sum(string strings)
@@ -57,6 +56,7 @@ namespace HelloWorld
             Console.WriteLine("---------Substraction-------");
             Console.WriteLine("Type the first number to sub");
             num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type the second number to sub");
             num2 = int.Parse(Console.ReadLine());
             finalResult = ((num1 + num2).ToString());
 
